@@ -1,0 +1,63 @@
+.dialog {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #dcdcdc;
+  max-width: 1200px;
+  margin: auto;
+  letter-spacing: 0.5px;
+  text-align: center;
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 0.5s ease forwards; 
+  box-sizing: border-box;
+}
+
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog p {
+  font-family: "Syne", sans-serif;
+  line-height: 1.6; 
+  font-size: 18px; 
+  font-weight: bold;
+  color: #191919; 
+  margin-bottom: 20px; 
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transform: translate(0); 
+}
+
+.dialog button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #191919; 
+  color: #dcdcdc;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.dialog button:hover {
+  background-color: #3f3f3f;
+  color: #e7e5e5;
+}
+
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

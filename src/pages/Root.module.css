@@ -1,0 +1,15 @@
+.myWorks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.prove{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+

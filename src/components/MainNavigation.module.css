@@ -1,0 +1,121 @@
+.headerWrapper {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: rgb(48, 48, 48);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8),
+    0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.MainNavigation {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between; /* Aligns nav and icons on opposite sides */
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex: 1; /* Allows nav to take up available space */
+  gap: 10px;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #dcdcdc;
+}
+
+.navigation li a.active {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: #dcdcdc;
+  color: #191919;
+}
+
+.navigation li a:hover {
+  color: #191919;
+  background-color: #dcdcdc;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem; /* Space between icons */
+  margin-right: 1rem;
+  padding: 2rem;
+}
+
+.icons a {
+  display: block;
+}
+
+.icons img {
+  width: 28px; /* Adjust size as needed */
+  height: 28px; /* Adjust size as needed */
+  transition: opacity 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.icons img:hover {
+  filter: grayscale(0);
+}
+
+/* .icons img:hover {
+  opacity: 0.7;
+} */
+
+.mobileHeader {
+  display: none;
+}
+
+.mobileHeaderIcon {
+  display: none;
+}
+
+
+
+
+@media (max-width: 800px) {
+  .MainNavigation {
+    display: none;
+  }
+
+  .mobileHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    /* border: 3px solid red; */
+  }
+
+  .mobileHeaderIcon {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: ease-in-out;
+  }
+
+  .mobileHeaderIcon:hover {
+    filter: opacity(0.8);
+    transform: scale(1.05);
+  }
+}

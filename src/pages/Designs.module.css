@@ -1,0 +1,10 @@
+.designs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}

@@ -1,0 +1,74 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.modalNavigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.modalNavigation ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.modalNavigation li {
+  list-style-type: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.modalNavigation li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  font-weight: bolder;
+  color: #dcdcdc;
+}
+
+.modalNavigation li a.active {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: #dcdcdc;
+  color: #191919;
+}
+
+.modalNavigation li a:hover {
+  color: #191919;
+  background-color: #dcdcdc;
+}
+
+.modalIcons {
+  display: flex;
+  justify-content: center;
+
+  gap: 1rem; /* Space between icons */
+  margin-right: 1rem;
+  padding: 2rem;
+}
+
+.modalIcons a {
+  display: block;
+  text-align: center;
+}
+
+.modalIcons img {
+  width: 28px; /* Adjust size as needed */
+  height: 28px; /* Adjust size as needed */
+  transition: opacity 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.modalIcons img:hover {
+  filter: grayscale(0);
+}

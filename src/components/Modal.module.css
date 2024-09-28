@@ -51,9 +51,9 @@
 .modalIcons {
   display: flex;
   justify-content: center;
-
-  gap: 1rem; /* Space between icons */
-  margin-right: 1rem;
+  width: 100%;
+  align-items: center;
+  gap: 1rem; 
   padding: 2rem;
 }
 
@@ -63,8 +63,8 @@
 }
 
 .modalIcons img {
-  width: 28px; /* Adjust size as needed */
-  height: 28px; /* Adjust size as needed */
+  width: 28px; 
+  height: 28px;
   transition: opacity 0.3s ease;
   filter: grayscale(100%);
 }
